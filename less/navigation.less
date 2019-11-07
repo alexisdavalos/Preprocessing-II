@@ -6,10 +6,18 @@ header{
     nav{
         .custom-layout(center,center);
         padding:1% 0;
-        width:50%;
+        width:75%;
+        @media @tablet{
+            width:100%;
+            flex-direction:column;
+        }
         .logo{
             .custom-layout(flex-start, center);
             width:50%;
+            @media @tablet{
+                .custom-layout(center, center);
+                margin: 3% 0;
+            }
             h2{
                 padding:0px;
             }
@@ -17,6 +25,9 @@ header{
         .links-wrapper{
             .custom-layout(flex-end, center);
             width:50%;
+            @media @tablet{
+                width:100%;
+            }
                 .links{
                 .custom-layout(space-evenly, center);
                 width:100%; 
