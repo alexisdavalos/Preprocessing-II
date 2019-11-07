@@ -1,1 +1,12 @@
 // Mixins in here
+.custom-layout(@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.custom-bottom-border(@px, @type, @color){
+    border-bottom: @px @type @color;
+}
+.clean-anchor(){
+    text-decoration: none;
+}

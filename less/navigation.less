@@ -1,1 +1,38 @@
 // Navigation Styles here
+
+header{
+    .custom-layout(center,center);
+    .custom-bottom-border(1px, dashed, gray);
+    nav{
+        .custom-layout(center,center);
+        padding:1% 0;
+        width:50%;
+        .logo{
+            .custom-layout(flex-start, center);
+            width:50%;
+            h2{
+                padding:0px;
+            }
+        }
+        .links-wrapper{
+            .custom-layout(flex-end, center);
+            width:50%;
+                .links{
+                .custom-layout(space-evenly, center);
+                width:100%; 
+                    a{
+                        .clean-anchor();
+                        font-size:@nav-anchor;
+                        color:@shark;
+                        font-weight:bold;
+                        &:hover{
+                            color:@eastern-blue;
+                        }
+                    }
+                }
+        }
+        
+    }
+}
+
+
