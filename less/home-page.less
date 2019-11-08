@@ -3,6 +3,9 @@
   @media @mobile{
     padding: 0 5%;
   }
+  @media @tablet{
+    padding: 0 5%;
+  }
   .welcome-section{
     .custom-bottom-border(2px, dashed, @navigation-border);
     .text-content{
@@ -17,11 +20,17 @@
       @media @mobile{
         flex-direction:column;
       }
+      @media @tablet{
+        flex-direction:column;
+      }
 
     .text-content {
       width: 48%;
       padding-right: 1%;
       @media @mobile{
+        width:100%;
+      }
+      @media @tablet{
         width:100%;
       }
     }
@@ -32,7 +41,15 @@
       @media @mobile{
         width:100%;
       }
+      @media @tablet{
+        width:100%;
+        text-align:center;
+      }
       img {
+
+      @media @tablet{
+        width:75%;
+      }
         padding:5%;
         border-radius: 15%;
         width:100%;
@@ -45,6 +62,9 @@
     border-bottom: 2px dashed @navigation-border;
     @media @mobile{
       flex-direction:column-reverse;
+    }
+    @media @tablet{
+      flex-direction: column-reverse;
     }
 
     .text-content {
@@ -80,7 +100,9 @@
     @media @mobile{
       justify-content: center;
       flex-direction:column;
-
+    }
+    @media @tablet{
+      flex-direction:column;
     }
 
     .destination {
@@ -88,12 +110,16 @@
       margin-bottom: 30px;
       @media @mobile{
         width:100%;
-        padding:10%;
+        padding:5%;
+      }
+      @media @tablet{
+        width: 100%;
+        padding: 10%;
       }
         .btn{
           .custom-layout(center,center);
           button{
-            .custom-btn(@eastern-blue, 100%, @sandy-beach)
+            .custom-btn(@eastern-blue, 100%, @sandy-beach);
           }
         }
 

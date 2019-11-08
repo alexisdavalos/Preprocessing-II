@@ -7,10 +7,10 @@ header{
         .custom-layout(center,center);
         padding:1% 0;
         width:50%;
-        @media @mobile{
+        @media @tablet{
             width:100%;
             flex-direction:column;
-        }
+        }//end mobile
         
         .logo{
             .custom-layout(flex-start, center);
@@ -18,7 +18,13 @@ header{
             @media @mobile{
                 .custom-layout(center, center);
                 margin: 3% 0;
-            }
+            }//end mobile
+            @media @tablet{
+                .custom-layout(center, center);
+                margin: 2% 0;
+            }//end mobile
+            
+            
             h2{
                 padding:0px;
             }//h2 end
