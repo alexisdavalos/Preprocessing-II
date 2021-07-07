@@ -1,1 +1,56 @@
 // Navigation Styles here
+
+header{
+    .custom-layout(center,center);
+    .custom-bottom-border(2px, dashed, @navigation-border);
+    nav{
+        .custom-layout(center,center);
+        padding:1% 0;
+        width:50%;
+        @media @tablet{
+            width:100%;
+            flex-direction:column;
+        }//end mobile
+        
+        .logo{
+            .custom-layout(flex-start, center);
+            width:50%;
+            @media @mobile{
+                .custom-layout(center, center);
+                margin: 3% 0;
+            }//end mobile
+            @media @tablet{
+                .custom-layout(center, center);
+                margin: 2% 0;
+            }//end mobile
+            
+            
+            h2{
+                padding:0px;
+            }//h2 end
+        }
+        .links-wrapper{
+            .custom-layout(flex-end, center);
+            width:50%;
+            @media @mobile{
+                width:100%;
+            }
+                .links{
+                .custom-layout(space-evenly, center);
+                width:100%; 
+                    a{
+                        .clean-anchor();
+                        font-size:@nav-anchor;
+                        color:@shark;
+                        font-weight:bold;
+                        &:hover{
+                            color:@eastern-blue;
+                        }
+                    }
+                }
+        }
+        
+    }
+}
+
+
